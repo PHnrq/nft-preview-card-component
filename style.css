@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html{
+  /*primary*/
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /*neutral*/
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  font-family:'Outfit', sans-serif;
+  font-size: 62.5%;
+}
+
+body{
+  background-color: var(--very-dark-blue-main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .8rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+
+  padding:3.2rem;
+  width: fit-content;
+  border-radius: 1.6rem;
+
+  background-color: var(--very-dark-blue-card-bg);
+}
+
+.equilibrium-img{
+  border-radius: 1.6rem;
+  width: 32.1rem;
+  height: 30.1rem;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--white);
+
+  margin-block-start: 2.4rem;
+}
+
+.descripition{
+  font-weight: 400;
+  font-size: 1.6rem;
+  max-width: 32.1rem;
+  line-height: 2.3rem;
+  margin-block-start: 2.4rem;
+
+  color: var(--soft-blue);
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 2.4rem;
+}
+
+.ethereum-info,.time-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.ethereum-info p,.time-info p{
+  margin-inline-start: .8rem;
+}
+
+.ethereum-info p{
+  color: var(--cyan);
+}
+
+.time-info p{
+  color: var(--soft-blue);
+}
+
+.divider{
+  width: 100%;
+  height: 1px;
+  background-color: var(--soft-blue);
+  margin-block-start: 2.4rem;
+}
+
+.user-info{
+  display: flex;
+  align-items: center;
+  margin-block-start: 2.4rem;
+}
+
+.user-info p{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--soft-blue);
+
+  margin-inline-start: .8rem;
+}
+
+.user-info a{
+  color: var(--white);
+}
+
+@media screen and (max-width:375px){
+  .equilibrium-img{
+    width: 23.1rem;
+    height: 21.1rem;
+  }
+  .descripition{
+    width: 23.1rem;
+  }
+}
