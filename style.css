@@ -81,6 +81,7 @@ body{
 
 .ethereum-info p,.time-info p{
   margin-inline-start: .8rem;
+  font-size: 1.6rem;
 }
 
 .ethereum-info p{
