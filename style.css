@@ -48,7 +48,7 @@ body{
 
 .hover{
   position:absolute;
-  background-color: var(--cyan);
+  background-color: hsl(178, 100%, 50%, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,8 +57,9 @@ body{
 }
 
 .hover:hover{
-  opacity: 0.7;
+  opacity: 1;
   transition: .8s;
+  cursor: pointer;
 }
 
 .title{
