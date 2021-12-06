@@ -40,10 +40,25 @@ body{
   background-color: var(--very-dark-blue-card-bg);
 }
 
-.equilibrium-img{
+.equilibrium-img, .hover{
   border-radius: 1.6rem;
   width: 32.1rem;
   height: 30.1rem;
+}
+
+.hover{
+  position:absolute;
+  background-color: var(--cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+  opacity: 0;
+}
+
+.hover:hover{
+  opacity: 0.7;
+  transition: .8s;
 }
 
 .title{
@@ -52,6 +67,12 @@ body{
   color: var(--white);
 
   margin-block-start: 2.4rem;
+}
+
+.title:hover{
+  color: var(--cyan);
+  cursor: pointer;
+  transition: .5s;
 }
 
 .descripition{
@@ -117,8 +138,14 @@ body{
   color: var(--white);
 }
 
+.user-info a:hover{
+  color: var(--cyan);
+  cursor: pointer;
+  transition: .5s;
+}
+
 @media screen and (max-width:375px){
-  .equilibrium-img{
+  .equilibrium-img, .hover{
     width: 23.1rem;
     height: 21.1rem;
   }
